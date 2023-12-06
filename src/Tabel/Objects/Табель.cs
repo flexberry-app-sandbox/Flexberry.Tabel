@@ -28,11 +28,7 @@ namespace IIS.Tabel
     // *** End programmer edit section *** (Табель CustomAttributes)
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
-    [View("ТабельE", new string[] {
-            "НачалоС as \'Начало смены\'",
-            "КонецС as \'Конец смены\'"})]
-    [AssociatedDetailViewAttribute("ТабельE", "График", "ГрафикE", true, "", "График", true, new string[] {
-            ""})]
+    [View("ТабельE", new string[0])]
     [View("ТабельL", new string[] {
             "НачалоС as \'Начало смены\'",
             "КонецС as \'Конец смены\'"})]
@@ -42,6 +38,8 @@ namespace IIS.Tabel
         private string fКонецС;
         
         private string fНачалоС;
+        
+        private IIS.Tabel.Сотрудник fСотрудник;
         
         private IIS.Tabel.DetailArrayOfГрафик fГрафик;
         
@@ -111,6 +109,40 @@ namespace IIS.Tabel
                 // *** Start programmer edit section *** (Табель.НачалоС Set end)
 
                 // *** End programmer edit section *** (Табель.НачалоС Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Табель.
+        /// </summary>
+        // *** Start programmer edit section *** (Табель.Сотрудник CustomAttributes)
+
+        // *** End programmer edit section *** (Табель.Сотрудник CustomAttributes)
+        [PropertyStorage(new string[] {
+                "Сотрудник"})]
+        [NotNull()]
+        public virtual IIS.Tabel.Сотрудник Сотрудник
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Табель.Сотрудник Get start)
+
+                // *** End programmer edit section *** (Табель.Сотрудник Get start)
+                IIS.Tabel.Сотрудник result = this.fСотрудник;
+                // *** Start programmer edit section *** (Табель.Сотрудник Get end)
+
+                // *** End programmer edit section *** (Табель.Сотрудник Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Табель.Сотрудник Set start)
+
+                // *** End programmer edit section *** (Табель.Сотрудник Set start)
+                this.fСотрудник = value;
+                // *** Start programmer edit section *** (Табель.Сотрудник Set end)
+
+                // *** End programmer edit section *** (Табель.Сотрудник Set end)
             }
         }
         

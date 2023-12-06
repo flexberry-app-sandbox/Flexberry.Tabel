@@ -7,6 +7,7 @@ import { attr, belongsTo, hasMany } from 'ember-flexberry-data/utils/attributes'
 export let Model = Mixin.create({
   конецС: DS.attr('string'),
   началоС: DS.attr('string'),
+  сотрудник: DS.belongsTo('i-i-s-tabel-сотрудник', { inverse: null, async: false }),
   график: DS.hasMany('i-i-s-tabel-график', { inverse: 'табель', async: false })
 });
 
@@ -23,6 +24,13 @@ export let ValidationRules = {
       validator('ds-error'),
     ],
   },
+  сотрудник: {
+    descriptionKey: 'models.i-i-s-tabel-табель.validations.сотрудник.__caption__',
+    validators: [
+      validator('ds-error'),
+      validator('presence', true),
+    ],
+  },
   график: {
     descriptionKey: 'models.i-i-s-tabel-табель.validations.график.__caption__',
     validators: [
@@ -34,16 +42,7 @@ export let ValidationRules = {
 
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ТабельE', 'i-i-s-tabel-табель', {
-    началоС: attr('Начало смены', { index: 0 }),
-    конецС: attr('Конец смены', { index: 1 }),
-    график: hasMany('i-i-s-tabel-график', 'График', {
-      сотрудник: belongsTo('i-i-s-tabel-сотрудник', 'Сотрудник', {
-        фИО: attr('', { index: 1, hidden: true })
-      }, { index: 0, displayMemberPath: 'фИО' }),
-      начало: attr('Начало смены с', { index: 2 }),
-      конец: attr('по', { index: 3 }),
-      состояние: attr('Состояние ', { index: 4 })
-    })
+    
   });
 
   modelClass.defineProjection('ТабельL', 'i-i-s-tabel-табель', {

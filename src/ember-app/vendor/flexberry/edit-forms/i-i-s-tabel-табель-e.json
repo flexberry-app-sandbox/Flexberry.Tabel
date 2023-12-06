@@ -1,14 +1,5 @@
 ﻿{
-  "propertyLookup": [
-    {
-      "master": "сотрудник",
-      "displayAttributeName": "фИО",
-      "required": true,
-      "relationName": "График.Сотрудник",
-      "projection": "СотрудникL",
-      "detailModelName": "i-i-s-tabel-график"
-    }
-  ],
+  "propertyLookup": [],
   "external": false,
   "caption": "Табель",
   "name": "IISTabelТабельE",

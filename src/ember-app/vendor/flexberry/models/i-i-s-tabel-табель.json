@@ -25,7 +25,15 @@
       "ordered": false
     }
   ],
-  "belongsTo": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудник",
+      "relatedTo": "i-i-s-tabel-сотрудник",
+      "inverse": null
+    }
+  ],
   "hasMany": [
     {
       "name": "график",
@@ -37,30 +45,9 @@
     {
       "name": "ТабельE",
       "modelName": "i-i-s-tabel-табель",
-      "attrs": [
-        {
-          "name": "началоС",
-          "caption": "Начало смены",
-          "hidden": false,
-          "index": 0
-        },
-        {
-          "name": "конецС",
-          "caption": "Конец смены",
-          "hidden": false,
-          "index": 1
-        }
-      ],
+      "attrs": [],
       "belongsTo": [],
-      "hasMany": [
-        {
-          "projectionName": "ГрафикE",
-          "caption": "График",
-          "name": "график",
-          "relatedTo": "i-i-s-tabel-график",
-          "inverse": null
-        }
-      ]
+      "hasMany": []
     },
     {
       "name": "ТабельL",

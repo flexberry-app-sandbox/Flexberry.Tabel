@@ -7,6 +7,7 @@ import Tabel.utils.UUIDConverter;
 import javax.persistence.*;
 import java.util.UUID;
 
+import com.sap.olingo.jpa.metadata.core.edm.annotation.EdmIgnore;
 import java.util.List;
 
 /**
@@ -27,6 +28,16 @@ public class Tabel {
 
     @Column(name = "НачалоС")
     private String началос;
+
+    @EdmIgnore
+    @Converter(converterClass = UUIDConverter.class, name = "Sotrudnik")
+    @Convert("Sotrudnik")
+    @Column(name = "Сотрудник", length = 16, unique = true, nullable = false)
+    private UUID _sotrudnikid;
+
+    @ManyToOne(optional = false, fetch = FetchType.LAZY)
+    @JoinColumn(name = "Sotrudnik", insertable = false, updatable = false)
+    private Sotrudnik sotrudnik;
 
     @OneToMany(mappedBy = "tabel", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
     private List<Grafik> grafiks;
