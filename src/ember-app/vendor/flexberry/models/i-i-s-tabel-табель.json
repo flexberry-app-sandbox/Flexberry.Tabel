@@ -1,0 +1,89 @@
+﻿{
+  "name": "IISTabelТабель",
+  "modelName": "i-i-s-tabel-табель",
+  "className": "Табель",
+  "nameSpace": "IIS.Tabel",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "конецС",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "началоС",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "график",
+      "relatedTo": "i-i-s-tabel-график",
+      "inverse": "табель"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ТабельE",
+      "modelName": "i-i-s-tabel-табель",
+      "attrs": [
+        {
+          "name": "началоС",
+          "caption": "Начало смены",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "конецС",
+          "caption": "Окончание смены",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "ГрафикE",
+          "caption": "График",
+          "name": "график",
+          "relatedTo": "i-i-s-tabel-график",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ТабельL",
+      "modelName": "i-i-s-tabel-табель",
+      "attrs": [
+        {
+          "name": "началоС",
+          "caption": "Начало смены",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "конецС",
+          "caption": "Конец смены",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

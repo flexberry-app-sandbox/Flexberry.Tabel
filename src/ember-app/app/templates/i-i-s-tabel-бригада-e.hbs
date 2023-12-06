@@ -1,0 +1,71 @@
+<h3 class="ui header">{{t "forms.i-i-s-tabel-бригада-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.начало
+      class=(if (v-get validationModel "начало" "isInvalid") "error")
+      label=(t "forms.i-i-s-tabel-бригада-e.начало-caption")
+      data-test-i-i-s-tabel-бригада-e-начало=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "начало" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.конец
+      class=(if (v-get validationModel "конец" "isInvalid") "error")
+      label=(t "forms.i-i-s-tabel-бригада-e.конец-caption")
+      data-test-i-i-s-tabel-бригада-e-конец=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "конец" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.назначение
+      class=(if (v-get validationModel "назначение" "isInvalid") "error")
+      label=(t "forms.i-i-s-tabel-бригада-e.назначение-caption")
+      data-test-i-i-s-tabel-бригада-e-назначение=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "назначение" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-tabel-бригада-e.составБриг-caption"}}</label>
+    {{flexberry-groupedit
+      componentName="составБригGroupEdit"
+      mainModelProjection=modelProjection
+      modelProjection=modelProjection.attributes.составБриг
+      content=model.составБриг
+      readonly=readonly
+      orderable=false
+      class=(if (v-get validationModel "составБриг" "isInvalid") "error")
+      data-test-i-i-s-tabel-бригада-e-составБриг=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "составБриг" "message")}}
+  </div>
+</form>

@@ -1,0 +1,45 @@
+﻿{
+  "name": "IISTabelСоставБриг",
+  "modelName": "i-i-s-tabel-состав-бриг",
+  "className": "СоставБриг",
+  "nameSpace": "IIS.Tabel",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "должность",
+      "relatedTo": "i-i-s-tabel-должность",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудник",
+      "relatedTo": "i-i-s-tabel-сотрудник",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "бригада",
+      "relatedTo": "i-i-s-tabel-бригада",
+      "inverse": "составБриг"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СоставБригE",
+      "modelName": "i-i-s-tabel-состав-бриг",
+      "attrs": [],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

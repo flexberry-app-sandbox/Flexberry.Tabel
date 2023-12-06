@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-tabel-табель-e",
+  "editForm": "i-i-s-tabel-табель-e",
+  "external": false,
+  "caption": "Табель",
+  "name": "IISTabelТабельL",
+  "className": "ТабельL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-tabel-табель",
+      "modelProjection": "ТабельL"
+    }
+  ]
+}

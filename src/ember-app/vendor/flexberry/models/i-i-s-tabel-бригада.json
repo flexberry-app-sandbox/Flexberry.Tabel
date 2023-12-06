@@ -1,0 +1,110 @@
+﻿{
+  "name": "IISTabelБригада",
+  "modelName": "i-i-s-tabel-бригада",
+  "className": "Бригада",
+  "nameSpace": "IIS.Tabel",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "конец",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "назначение",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "начало",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "составБриг",
+      "relatedTo": "i-i-s-tabel-состав-бриг",
+      "inverse": "бригада"
+    }
+  ],
+  "projections": [
+    {
+      "name": "БригадаE",
+      "modelName": "i-i-s-tabel-бригада",
+      "attrs": [
+        {
+          "name": "начало",
+          "caption": "Сформирована с:",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "конец",
+          "caption": "по:",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "назначение",
+          "caption": "Назначение",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "СоставБригE",
+          "caption": "Состав бригады",
+          "name": "составБриг",
+          "relatedTo": "i-i-s-tabel-состав-бриг",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "БригадаL",
+      "modelName": "i-i-s-tabel-бригада",
+      "attrs": [
+        {
+          "name": "начало",
+          "caption": "Начало",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "конец",
+          "caption": "Конец",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "назначение",
+          "caption": "Назначение",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

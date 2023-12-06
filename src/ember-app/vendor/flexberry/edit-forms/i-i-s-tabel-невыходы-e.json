@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Невыходы",
+  "name": "IISTabelНевыходыE",
+  "className": "НевыходыE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-tabel-невыходы",
+      "modelProjection": "НевыходыE"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+﻿{
+  "name": "IISTabelГрафик",
+  "modelName": "i-i-s-tabel-график",
+  "className": "График",
+  "nameSpace": "IIS.Tabel",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "конец",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "начало",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "состояние",
+      "type": "i-i-s-tabel-причины",
+      "flexberryType": "Причины",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудник",
+      "relatedTo": "i-i-s-tabel-сотрудник",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "табель",
+      "relatedTo": "i-i-s-tabel-табель",
+      "inverse": "график"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ГрафикE",
+      "modelName": "i-i-s-tabel-график",
+      "attrs": [
+        {
+          "name": "начало",
+          "caption": "Начало смены с",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "конец",
+          "caption": "по",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "состояние",
+          "caption": "Состояние занятости",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

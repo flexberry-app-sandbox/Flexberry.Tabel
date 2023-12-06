@@ -1,0 +1,57 @@
+import Mixin from '@ember/object/mixin';
+import $ from 'jquery';
+import DS from 'ember-data';
+import { validator } from 'ember-cp-validations';
+import { attr, belongsTo, hasMany } from 'ember-flexberry-data/utils/attributes';
+
+export let Model = Mixin.create({
+  конец: DS.attr('string'),
+  назначение: DS.attr('string'),
+  начало: DS.attr('string'),
+  составБриг: DS.hasMany('i-i-s-tabel-состав-бриг', { inverse: 'бригада', async: false })
+});
+
+export let ValidationRules = {
+  конец: {
+    descriptionKey: 'models.i-i-s-tabel-бригада.validations.конец.__caption__',
+    validators: [
+      validator('ds-error'),
+    ],
+  },
+  назначение: {
+    descriptionKey: 'models.i-i-s-tabel-бригада.validations.назначение.__caption__',
+    validators: [
+      validator('ds-error'),
+    ],
+  },
+  начало: {
+    descriptionKey: 'models.i-i-s-tabel-бригада.validations.начало.__caption__',
+    validators: [
+      validator('ds-error'),
+    ],
+  },
+  составБриг: {
+    descriptionKey: 'models.i-i-s-tabel-бригада.validations.составБриг.__caption__',
+    validators: [
+      validator('ds-error'),
+      validator('has-many'),
+    ],
+  },
+};
+
+export let defineProjections = function (modelClass) {
+  modelClass.defineProjection('БригадаE', 'i-i-s-tabel-бригада', {
+    начало: attr('Сформирована с:', { index: 0 }),
+    конец: attr('по:', { index: 1 }),
+    назначение: attr('Назначение', { index: 2 }),
+    составБриг: hasMany('i-i-s-tabel-состав-бриг', 'Состав бригады', {
+      
+    })
+  });
+
+  modelClass.defineProjection('БригадаL', 'i-i-s-tabel-бригада', {
+    начало: attr('Начало', { index: 0 }),
+    конец: attr('Конец', { index: 1 }),
+    назначение: attr('Назначение', { index: 2 })
+  });
+};

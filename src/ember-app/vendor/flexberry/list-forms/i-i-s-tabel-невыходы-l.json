@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-tabel-невыходы-e",
+  "editForm": "i-i-s-tabel-невыходы-e",
+  "external": false,
+  "caption": "Невыходы",
+  "name": "IISTabelНевыходыL",
+  "className": "НевыходыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-tabel-невыходы",
+      "modelProjection": "НевыходыL"
+    }
+  ]
+}

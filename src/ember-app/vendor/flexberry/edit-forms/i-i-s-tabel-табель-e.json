@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Табель",
+  "name": "IISTabelТабельE",
+  "className": "ТабельE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-tabel-табель",
+      "modelProjection": "ТабельE"
+    }
+  ]
+}

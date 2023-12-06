@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-tabel-бригада-e",
+  "editForm": "i-i-s-tabel-бригада-e",
+  "external": false,
+  "caption": "Бригада",
+  "name": "IISTabelБригадаL",
+  "className": "БригадаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-tabel-бригада",
+      "modelProjection": "БригадаL"
+    }
+  ]
+}

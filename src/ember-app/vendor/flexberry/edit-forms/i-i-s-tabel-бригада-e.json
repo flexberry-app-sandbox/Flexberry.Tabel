@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Бригада",
+  "name": "IISTabelБригадаE",
+  "className": "БригадаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-tabel-бригада",
+      "modelProjection": "БригадаE"
+    }
+  ]
+}

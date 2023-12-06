@@ -1,0 +1,50 @@
+﻿{
+  "applicationCaption": "Tabel",
+  "applicationTitle": "Tabel",
+  "items": [
+    {
+      "link": null,
+      "menuName": "tabel",
+      "caption": "Tabel",
+      "title": "Tabel",
+      "children": [
+        {
+          "link": "i-i-s-tabel-табель-l",
+          "menuName": null,
+          "caption": "Табель",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-tabel-сотрудник-l",
+          "menuName": null,
+          "caption": "Сотрудник",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-tabel-бригада-l",
+          "menuName": null,
+          "caption": "Бригада",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-tabel-невыходы-l",
+          "menuName": null,
+          "caption": "Невыходы",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-tabel-должность-l",
+          "menuName": null,
+          "caption": "Должность",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}
