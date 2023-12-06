@@ -46,7 +46,7 @@
         },
         {
           "name": "конецС",
-          "caption": "Окончание смены",
+          "caption": "Конец смены",
           "hidden": false,
           "index": 1
         }

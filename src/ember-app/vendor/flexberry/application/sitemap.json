@@ -4,17 +4,10 @@
   "items": [
     {
       "link": null,
-      "menuName": "tabel",
-      "caption": "Tabel",
-      "title": "Tabel",
+      "menuName": "кадры",
+      "caption": "Кадры",
+      "title": "Кадры",
       "children": [
-        {
-          "link": "i-i-s-tabel-табель-l",
-          "menuName": null,
-          "caption": "Табель",
-          "title": "",
-          "children": null
-        },
         {
           "link": "i-i-s-tabel-сотрудник-l",
           "menuName": null,
@@ -40,6 +33,21 @@
           "link": "i-i-s-tabel-должность-l",
           "menuName": null,
           "caption": "Должность",
+          "title": "",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "учет-времени",
+      "caption": "Учет времени",
+      "title": "Учет времени",
+      "children": [
+        {
+          "link": "i-i-s-tabel-табель-l",
+          "menuName": null,
+          "caption": "Табель",
           "title": "",
           "children": null
         }

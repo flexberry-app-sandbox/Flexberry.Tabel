@@ -51,6 +51,6 @@ export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ГрафикE', 'i-i-s-tabel-график', {
     начало: attr('Начало смены с', { index: 0 }),
     конец: attr('по', { index: 1 }),
-    состояние: attr('Состояние занятости', { index: 2 })
+    состояние: attr('Состояние ', { index: 2 })
   });
 };

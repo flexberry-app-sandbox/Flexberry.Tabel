@@ -96,6 +96,34 @@ $.extend(true, translations, {
           caption: 'Home',
           title: ''
         },
+        кадры: {
+          caption: 'Кадры',
+          title: 'Кадры',
+          'i-i-s-tabel-сотрудник-l': {
+            caption: 'Сотрудник',
+            title: ''
+          },
+          'i-i-s-tabel-бригада-l': {
+            caption: 'Бригада',
+            title: ''
+          },
+          'i-i-s-tabel-невыходы-l': {
+            caption: 'Невыходы',
+            title: ''
+          },
+          'i-i-s-tabel-должность-l': {
+            caption: 'Должность',
+            title: ''
+          }
+        },
+        'учет-времени': {
+          caption: 'Учет времени',
+          title: 'Учет времени',
+          'i-i-s-tabel-табель-l': {
+            caption: 'Табель',
+            title: ''
+          }
+        },
         tabel: {
           caption: 'Tabel',
           title: 'Tabel',

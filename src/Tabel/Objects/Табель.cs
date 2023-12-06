@@ -30,7 +30,7 @@ namespace IIS.Tabel
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ТабельE", new string[] {
             "НачалоС as \'Начало смены\'",
-            "КонецС as \'Окончание смены\'"})]
+            "КонецС as \'Конец смены\'"})]
     [AssociatedDetailViewAttribute("ТабельE", "График", "ГрафикE", true, "", "График", true, new string[] {
             ""})]
     [View("ТабельL", new string[] {

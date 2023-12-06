@@ -31,7 +31,7 @@ namespace IIS.Tabel
     [View("ГрафикE", new string[] {
             "Начало as \'Начало смены с\'",
             "Конец as \'по\'",
-            "Состояние as \'Состояние занятости\'"})]
+            "Состояние as \'Состояние \'"})]
     public class График : ICSSoft.STORMNET.DataObject
     {
         
