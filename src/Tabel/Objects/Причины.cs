@@ -12,6 +12,7 @@ namespace IIS.Tabel
 {
     using System;
     using System.Xml;
+    using ICSSoft.STORMNET;
     
     
     // *** Start programmer edit section *** (Using statements)
@@ -31,26 +32,31 @@ namespace IIS.Tabel
         // *** Start programmer edit section *** (Причины.Выходной CustomAttributes)
 
         // *** End programmer edit section *** (Причины.Выходной CustomAttributes)
+        [Caption("Выходной")]
         Выходной,
         
-        // *** Start programmer edit section *** (Причины.Отугл CustomAttributes)
+        // *** Start programmer edit section *** (Причины.Отгул CustomAttributes)
 
-        // *** End programmer edit section *** (Причины.Отугл CustomAttributes)
-        Отугл,
+        // *** End programmer edit section *** (Причины.Отгул CustomAttributes)
+        [Caption("Отгул")]
+        Отгул,
         
         // *** Start programmer edit section *** (Причины.Отпуск CustomAttributes)
 
         // *** End programmer edit section *** (Причины.Отпуск CustomAttributes)
+        [Caption("Отпуск")]
         Отпуск,
         
         // *** Start programmer edit section *** (Причины.Болезнь CustomAttributes)
 
         // *** End programmer edit section *** (Причины.Болезнь CustomAttributes)
+        [Caption("Болезнь")]
         Болезнь,
         
         // *** Start programmer edit section *** (Причины.Работа CustomAttributes)
 
         // *** End programmer edit section *** (Причины.Работа CustomAttributes)
+        [Caption("Работа")]
         Работа,
     }
 }
