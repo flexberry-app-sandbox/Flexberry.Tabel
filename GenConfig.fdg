@@ -20,8 +20,8 @@
         "EmberMetadata": false
       },
       "ApacheCordova": {
-        "CordovaProject": false,
-        "BuildApp": false
+        "CordovaProject": true,
+        "BuildApp": true
       }
     },
     "Backend": {
