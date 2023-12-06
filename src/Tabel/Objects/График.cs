@@ -29,9 +29,13 @@ namespace IIS.Tabel
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ГрафикE", new string[] {
+            "Сотрудник as \'Сотрудник\'",
+            "Сотрудник.ФИО",
             "Начало as \'Начало смены с\'",
             "Конец as \'по\'",
-            "Состояние as \'Состояние \'"})]
+            "Состояние as \'Состояние \'"}, Hidden=new string[] {
+            "Сотрудник.ФИО"})]
+    [MasterViewDefineAttribute("ГрафикE", "Сотрудник", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "")]
     public class График : ICSSoft.STORMNET.DataObject
     {
         

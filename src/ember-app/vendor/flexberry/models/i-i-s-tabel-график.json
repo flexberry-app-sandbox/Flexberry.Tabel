@@ -60,22 +60,44 @@
           "name": "начало",
           "caption": "Начало смены с",
           "hidden": false,
-          "index": 0
+          "index": 2
         },
         {
           "name": "конец",
           "caption": "по",
           "hidden": false,
-          "index": 1
+          "index": 3
         },
         {
           "name": "состояние",
           "caption": "Состояние ",
           "hidden": false,
-          "index": 2
+          "index": 4
         }
       ],
-      "belongsTo": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Сотрудник",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "",
+              "hidden": true,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Сотрудник",
+          "name": "сотрудник",
+          "relatedTo": "i-i-s-tabel-сотрудник",
+          "inverse": null
+        }
+      ],
       "hasMany": []
     }
   ],

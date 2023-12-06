@@ -51,7 +51,7 @@
             }
           ],
           "index": 0,
-          "type": "default",
+          "type": "standard",
           "caption": "Должность",
           "name": "должность",
           "relatedTo": "i-i-s-tabel-должность",
@@ -72,7 +72,7 @@
             }
           ],
           "index": 2,
-          "type": "default",
+          "type": "standard",
           "caption": "Сотрудник",
           "name": "сотрудник",
           "relatedTo": "i-i-s-tabel-сотрудник",

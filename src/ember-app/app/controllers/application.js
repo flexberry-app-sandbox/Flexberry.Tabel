@@ -28,25 +28,25 @@ export default Controller.extend({
             link: 'i-i-s-tabel-сотрудник-l',
             caption: i18n.t('forms.application.sitemap.кадры.i-i-s-tabel-сотрудник-l.caption'),
             title: i18n.t('forms.application.sitemap.кадры.i-i-s-tabel-сотрудник-l.title'),
-            icon: 'chart line',
+            icon: 'archive',
             children: null
           }, {
             link: 'i-i-s-tabel-бригада-l',
             caption: i18n.t('forms.application.sitemap.кадры.i-i-s-tabel-бригада-l.caption'),
             title: i18n.t('forms.application.sitemap.кадры.i-i-s-tabel-бригада-l.title'),
-            icon: 'address card',
+            icon: 'tags',
             children: null
           }, {
             link: 'i-i-s-tabel-невыходы-l',
             caption: i18n.t('forms.application.sitemap.кадры.i-i-s-tabel-невыходы-l.caption'),
             title: i18n.t('forms.application.sitemap.кадры.i-i-s-tabel-невыходы-l.title'),
-            icon: 'book',
+            icon: 'chart line',
             children: null
           }, {
             link: 'i-i-s-tabel-должность-l',
             caption: i18n.t('forms.application.sitemap.кадры.i-i-s-tabel-должность-l.caption'),
             title: i18n.t('forms.application.sitemap.кадры.i-i-s-tabel-должность-l.title'),
-            icon: 'archive',
+            icon: 'chart bar',
             children: null
           }]
         }, {

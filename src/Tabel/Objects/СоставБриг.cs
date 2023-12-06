@@ -35,6 +35,8 @@ namespace IIS.Tabel
             "Сотрудник.ФИО as \'ФИО\'"}, Hidden=new string[] {
             "Должность.наименование",
             "Сотрудник.ФИО"})]
+    [MasterViewDefineAttribute("СоставБригE", "Должность", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "")]
+    [MasterViewDefineAttribute("СоставБригE", "Сотрудник", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "")]
     public class СоставБриг : ICSSoft.STORMNET.DataObject
     {
         

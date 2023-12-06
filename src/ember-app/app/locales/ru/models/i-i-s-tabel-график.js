@@ -1,6 +1,12 @@
 export default {
   projections: {
     ГрафикE: {
+      сотрудник: {
+        __caption__: 'Сотрудник',
+        фИО: {
+          __caption__: ''
+        }
+      },
       начало: {
         __caption__: 'Начало смены с'
       },
