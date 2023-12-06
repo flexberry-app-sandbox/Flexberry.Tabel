@@ -34,7 +34,15 @@
       "ordered": false
     }
   ],
-  "belongsTo": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудник",
+      "relatedTo": "i-i-s-tabel-сотрудник",
+      "inverse": null
+    }
+  ],
   "hasMany": [
     {
       "name": "составБриг",
@@ -66,7 +74,22 @@
           "index": 2
         }
       ],
-      "belongsTo": [],
+      "belongsTo": [
+        {
+          "lookupValue": "ФИО",
+          "lookupValueField": "фИО",
+          "relationName": "Сотрудник",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 3,
+          "type": "standard",
+          "caption": "Бригадир",
+          "name": "сотрудник",
+          "relatedTo": "i-i-s-tabel-сотрудник",
+          "inverse": null
+        }
+      ],
       "hasMany": [
         {
           "projectionName": "СоставБригE",

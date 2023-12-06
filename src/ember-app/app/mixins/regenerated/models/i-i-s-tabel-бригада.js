@@ -8,6 +8,7 @@ export let Model = Mixin.create({
   конец: DS.attr('string'),
   назначение: DS.attr('string'),
   начало: DS.attr('string'),
+  сотрудник: DS.belongsTo('i-i-s-tabel-сотрудник', { inverse: null, async: false }),
   составБриг: DS.hasMany('i-i-s-tabel-состав-бриг', { inverse: 'бригада', async: false })
 });
 
@@ -30,6 +31,13 @@ export let ValidationRules = {
       validator('ds-error'),
     ],
   },
+  сотрудник: {
+    descriptionKey: 'models.i-i-s-tabel-бригада.validations.сотрудник.__caption__',
+    validators: [
+      validator('ds-error'),
+      validator('presence', true),
+    ],
+  },
   составБриг: {
     descriptionKey: 'models.i-i-s-tabel-бригада.validations.составБриг.__caption__',
     validators: [
@@ -44,6 +52,9 @@ export let defineProjections = function (modelClass) {
     начало: attr('Сформирована с:', { index: 0 }),
     конец: attr('по:', { index: 1 }),
     назначение: attr('Назначение', { index: 2 }),
+    сотрудник: belongsTo('i-i-s-tabel-сотрудник', 'Бригадир', {
+
+    }, { index: 3, displayMemberPath: 'фИО' }),
     составБриг: hasMany('i-i-s-tabel-состав-бриг', 'Состав бригады', {
       должность: belongsTo('i-i-s-tabel-должность', 'Должность', {
         наименование: attr('Должность', { index: 1, hidden: true })

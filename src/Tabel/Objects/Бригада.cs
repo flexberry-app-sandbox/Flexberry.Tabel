@@ -31,9 +31,11 @@ namespace IIS.Tabel
     [View("БригадаE", new string[] {
             "начало as \'Сформирована с:\'",
             "конец as \'по:\'",
-            "назначение as \'Назначение\'"})]
+            "назначение as \'Назначение\'",
+            "Сотрудник as \'Бригадир\'"})]
     [AssociatedDetailViewAttribute("БригадаE", "СоставБриг", "СоставБригE", true, "", "Состав бригады", true, new string[] {
             ""})]
+    [MasterViewDefineAttribute("БригадаE", "Сотрудник", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "ФИО")]
     [View("БригадаL", new string[] {
             "начало as \'Начало\'",
             "конец as \'Конец\'",
@@ -46,6 +48,8 @@ namespace IIS.Tabel
         private string fначало;
         
         private string fназначение;
+        
+        private IIS.Tabel.Сотрудник fСотрудник;
         
         private IIS.Tabel.DetailArrayOfСоставБриг fСоставБриг;
         
@@ -147,6 +151,40 @@ namespace IIS.Tabel
                 // *** Start programmer edit section *** (Бригада.начало Set end)
 
                 // *** End programmer edit section *** (Бригада.начало Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Бригада.
+        /// </summary>
+        // *** Start programmer edit section *** (Бригада.Сотрудник CustomAttributes)
+
+        // *** End programmer edit section *** (Бригада.Сотрудник CustomAttributes)
+        [PropertyStorage(new string[] {
+                "Сотрудник"})]
+        [NotNull()]
+        public virtual IIS.Tabel.Сотрудник Сотрудник
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Бригада.Сотрудник Get start)
+
+                // *** End programmer edit section *** (Бригада.Сотрудник Get start)
+                IIS.Tabel.Сотрудник result = this.fСотрудник;
+                // *** Start programmer edit section *** (Бригада.Сотрудник Get end)
+
+                // *** End programmer edit section *** (Бригада.Сотрудник Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Бригада.Сотрудник Set start)
+
+                // *** End programmer edit section *** (Бригада.Сотрудник Set start)
+                this.fСотрудник = value;
+                // *** Start programmer edit section *** (Бригада.Сотрудник Set end)
+
+                // *** End programmer edit section *** (Бригада.Сотрудник Set end)
             }
         }
         
