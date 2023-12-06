@@ -22,25 +22,24 @@ export default Controller.extend({
             link: 'i-i-s-tabel-сотрудник-l',
             caption: i18n.t('forms.application.sitemap.кадры.i-i-s-tabel-сотрудник-l.caption'),
             title: i18n.t('forms.application.sitemap.кадры.i-i-s-tabel-сотрудник-l.title'),
-            icon: 'archive',
+            icon: 'list',
             children: null
           }, {
             link: 'i-i-s-tabel-бригада-l',
             caption: i18n.t('forms.application.sitemap.кадры.i-i-s-tabel-бригада-l.caption'),
             title: i18n.t('forms.application.sitemap.кадры.i-i-s-tabel-бригада-l.title'),
-            icon: 'building',
+            icon: 'chart bar',
             children: null
           }, {
             link: 'i-i-s-tabel-невыходы-l',
             caption: i18n.t('forms.application.sitemap.кадры.i-i-s-tabel-невыходы-l.caption'),
             title: i18n.t('forms.application.sitemap.кадры.i-i-s-tabel-невыходы-l.title'),
-            icon: 'edit',
             children: null
           }, {
             link: 'i-i-s-tabel-должность-l',
             caption: i18n.t('forms.application.sitemap.кадры.i-i-s-tabel-должность-l.caption'),
             title: i18n.t('forms.application.sitemap.кадры.i-i-s-tabel-должность-l.title'),
-            icon: 'list',
+            icon: 'calendar',
             children: null
           }]
         }, {
@@ -52,7 +51,7 @@ export default Controller.extend({
             link: 'i-i-s-tabel-табель-l',
             caption: i18n.t('forms.application.sitemap.учет-времени.i-i-s-tabel-табель-l.caption'),
             title: i18n.t('forms.application.sitemap.учет-времени.i-i-s-tabel-табель-l.title'),
-            icon: 'tags',
+            icon: 'address card',
             children: null
           }]
         }

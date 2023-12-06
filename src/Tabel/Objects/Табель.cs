@@ -28,7 +28,13 @@ namespace IIS.Tabel
     // *** End programmer edit section *** (Табель CustomAttributes)
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
-    [View("ТабельE", new string[0])]
+    [View("ТабельE", new string[] {
+            "НачалоС as \'Начало смены\'",
+            "КонецС as \'Конец смены\'",
+            "Сотрудник as \'Бригадир\'"})]
+    [AssociatedDetailViewAttribute("ТабельE", "График", "ГрафикE", true, "", "График", true, new string[] {
+            ""})]
+    [MasterViewDefineAttribute("ТабельE", "Сотрудник", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "ФИО")]
     [View("ТабельL", new string[] {
             "НачалоС as \'Начало смены\'",
             "КонецС as \'Конец смены\'"})]
