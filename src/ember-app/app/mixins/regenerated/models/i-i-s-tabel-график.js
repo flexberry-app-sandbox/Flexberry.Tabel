@@ -51,7 +51,7 @@ export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ГрафикE', 'i-i-s-tabel-график', {
     сотрудник: belongsTo('i-i-s-tabel-сотрудник', 'Сотрудник', {
       фИО: attr('', { index: 1, hidden: true })
-    }, { index: 0 }),
+    }, { index: 0, displayMemberPath: 'фИО' }),
     начало: attr('Начало смены с', { index: 2 }),
     конец: attr('по', { index: 3 }),
     состояние: attr('Состояние ', { index: 4 })

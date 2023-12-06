@@ -77,8 +77,8 @@
       ],
       "belongsTo": [
         {
-          "lookupValue": null,
-          "lookupValueField": null,
+          "lookupValue": "ФИО",
+          "lookupValueField": "фИО",
           "relationName": "Сотрудник",
           "belongsTo": [],
           "hidden": false,

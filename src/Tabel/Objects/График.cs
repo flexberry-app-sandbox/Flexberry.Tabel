@@ -35,7 +35,7 @@ namespace IIS.Tabel
             "Конец as \'по\'",
             "Состояние as \'Состояние \'"}, Hidden=new string[] {
             "Сотрудник.ФИО"})]
-    [MasterViewDefineAttribute("ГрафикE", "Сотрудник", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "")]
+    [MasterViewDefineAttribute("ГрафикE", "Сотрудник", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "ФИО")]
     public class График : ICSSoft.STORMNET.DataObject
     {
         

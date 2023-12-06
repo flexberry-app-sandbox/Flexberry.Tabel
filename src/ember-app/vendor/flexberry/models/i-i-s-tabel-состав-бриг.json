@@ -37,8 +37,8 @@
       "attrs": [],
       "belongsTo": [
         {
-          "lookupValue": null,
-          "lookupValueField": null,
+          "lookupValue": "наименование",
+          "lookupValueField": "наименование",
           "relationName": "Должность",
           "belongsTo": [],
           "hidden": false,
@@ -58,8 +58,8 @@
           "inverse": null
         },
         {
-          "lookupValue": null,
-          "lookupValueField": null,
+          "lookupValue": "ФИО",
+          "lookupValueField": "фИО",
           "relationName": "Сотрудник",
           "belongsTo": [],
           "hidden": false,

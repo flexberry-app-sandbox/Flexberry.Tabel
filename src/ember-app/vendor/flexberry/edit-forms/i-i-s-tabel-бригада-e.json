@@ -2,7 +2,7 @@
   "propertyLookup": [
     {
       "master": "должность",
-      "displayAttributeName": null,
+      "displayAttributeName": "наименование",
       "required": true,
       "relationName": "СоставБриг.Должность",
       "projection": "ДолжностьL",
@@ -10,7 +10,7 @@
     },
     {
       "master": "сотрудник",
-      "displayAttributeName": null,
+      "displayAttributeName": "фИО",
       "required": true,
       "relationName": "СоставБриг.Сотрудник",
       "projection": "СотрудникL",
