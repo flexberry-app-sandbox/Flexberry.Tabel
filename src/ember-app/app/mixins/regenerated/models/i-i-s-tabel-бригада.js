@@ -45,7 +45,12 @@ export let defineProjections = function (modelClass) {
     конец: attr('по:', { index: 1 }),
     назначение: attr('Назначение', { index: 2 }),
     составБриг: hasMany('i-i-s-tabel-состав-бриг', 'Состав бригады', {
-      
+      должность: belongsTo('i-i-s-tabel-должность', 'Должность', {
+        наименование: attr('Должность', { index: 1, hidden: true })
+      }, { index: 0 }),
+      сотрудник: belongsTo('i-i-s-tabel-сотрудник', 'Сотрудник', {
+        фИО: attr('ФИО', { index: 3, hidden: true })
+      }, { index: 2 })
     })
   });
 

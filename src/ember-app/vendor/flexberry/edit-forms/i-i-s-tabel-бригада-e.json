@@ -1,5 +1,22 @@
 ﻿{
-  "propertyLookup": [],
+  "propertyLookup": [
+    {
+      "master": "должность",
+      "displayAttributeName": null,
+      "required": true,
+      "relationName": "СоставБриг.Должность",
+      "projection": "ДолжностьL",
+      "detailModelName": "i-i-s-tabel-состав-бриг"
+    },
+    {
+      "master": "сотрудник",
+      "displayAttributeName": null,
+      "required": true,
+      "relationName": "СоставБриг.Сотрудник",
+      "projection": "СотрудникL",
+      "detailModelName": "i-i-s-tabel-состав-бриг"
+    }
+  ],
   "external": false,
   "caption": "Бригада",
   "name": "IISTabelБригадаE",

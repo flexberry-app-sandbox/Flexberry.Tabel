@@ -28,7 +28,13 @@ namespace IIS.Tabel
     // *** End programmer edit section *** (СоставБриг CustomAttributes)
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
-    [View("СоставБригE", new string[0])]
+    [View("СоставБригE", new string[] {
+            "Должность as \'Должность\'",
+            "Должность.наименование as \'Должность\'",
+            "Сотрудник as \'Сотрудник\'",
+            "Сотрудник.ФИО as \'ФИО\'"}, Hidden=new string[] {
+            "Должность.наименование",
+            "Сотрудник.ФИО"})]
     public class СоставБриг : ICSSoft.STORMNET.DataObject
     {
         
