@@ -124,6 +124,10 @@ $.extend(true, translations, {
             title: ''
           }
         },
+        выбрать: {
+          caption: 'Выбрать',
+          title: 'Выбрать'
+        },
         tabel: {
           caption: 'Tabel',
           title: 'Tabel',

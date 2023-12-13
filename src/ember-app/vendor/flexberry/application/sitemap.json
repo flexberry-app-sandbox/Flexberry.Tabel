@@ -52,6 +52,13 @@
           "children": null
         }
       ]
+    },
+    {
+      "link": null,
+      "menuName": "выбрать",
+      "caption": "Выбрать",
+      "title": "Выбрать",
+      "children": null
     }
   ],
   "mobile": true

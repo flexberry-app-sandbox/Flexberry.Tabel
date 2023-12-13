@@ -43,11 +43,11 @@ namespace IIS.Tabel
     public class Бригада : ICSSoft.STORMNET.DataObject
     {
         
-        private string fконец;
-        
         private string fначало;
         
         private string fназначение;
+        
+        private string fконец;
         
         private IIS.Tabel.Сотрудник fСотрудник;
         

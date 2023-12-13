@@ -27,6 +27,9 @@ public class Sotrudnik {
     @Column(name = "код")
     private String код;
 
+    @Column(name = "Адрес")
+    private String адрес;
+
 
     public Sotrudnik() {
         super();
@@ -54,6 +57,14 @@ public class Sotrudnik {
 
     public void setкод(String код) {
       this.код = код;
+    }
+
+    public String getАдрес() {
+      return адрес;
+    }
+
+    public void setАдрес(String адрес) {
+      this.адрес = адрес;
     }
 
 

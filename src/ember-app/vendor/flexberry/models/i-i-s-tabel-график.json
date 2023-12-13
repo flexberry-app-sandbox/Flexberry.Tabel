@@ -88,6 +88,12 @@
               "caption": "",
               "hidden": true,
               "index": 1
+            },
+            {
+              "name": "адрес",
+              "caption": "",
+              "hidden": false,
+              "index": 5
             }
           ],
           "index": 0,

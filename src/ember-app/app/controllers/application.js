@@ -28,13 +28,13 @@ export default Controller.extend({
             link: 'i-i-s-tabel-сотрудник-l',
             caption: i18n.t('forms.application.sitemap.кадры.i-i-s-tabel-сотрудник-l.caption'),
             title: i18n.t('forms.application.sitemap.кадры.i-i-s-tabel-сотрудник-l.title'),
-            icon: 'building',
+            icon: 'edit',
             children: null
           }, {
             link: 'i-i-s-tabel-бригада-l',
             caption: i18n.t('forms.application.sitemap.кадры.i-i-s-tabel-бригада-l.caption'),
             title: i18n.t('forms.application.sitemap.кадры.i-i-s-tabel-бригада-l.title'),
-            icon: 'chart bar',
+            icon: 'archive',
             children: null
           }, {
             link: 'i-i-s-tabel-невыходы-l',
@@ -46,7 +46,7 @@ export default Controller.extend({
             link: 'i-i-s-tabel-должность-l',
             caption: i18n.t('forms.application.sitemap.кадры.i-i-s-tabel-должность-l.caption'),
             title: i18n.t('forms.application.sitemap.кадры.i-i-s-tabel-должность-l.title'),
-            icon: 'chart bar',
+            icon: 'address card',
             children: null
           }]
         }, {
@@ -58,9 +58,15 @@ export default Controller.extend({
             link: 'i-i-s-tabel-табель-l',
             caption: i18n.t('forms.application.sitemap.учет-времени.i-i-s-tabel-табель-l.caption'),
             title: i18n.t('forms.application.sitemap.учет-времени.i-i-s-tabel-табель-l.title'),
-            icon: 'phone',
+            icon: 'edit',
             children: null
           }]
+        }, {
+          link: null,
+          icon: 'list',
+          caption: i18n.t('forms.application.sitemap.выбрать.caption'),
+          title: i18n.t('forms.application.sitemap.выбрать.title'),
+          children: null
         }
       ]
     };

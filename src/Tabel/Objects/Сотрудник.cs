@@ -41,10 +41,44 @@ namespace IIS.Tabel
         
         private string fкод;
         
+        private string fАдрес;
+        
         // *** Start programmer edit section *** (Сотрудник CustomMembers)
 
         // *** End programmer edit section *** (Сотрудник CustomMembers)
 
+        
+        /// <summary>
+        /// Адрес.
+        /// </summary>
+        // *** Start programmer edit section *** (Сотрудник.Адрес CustomAttributes)
+
+        // *** End programmer edit section *** (Сотрудник.Адрес CustomAttributes)
+        [StrLen(255)]
+        public virtual string Адрес
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Сотрудник.Адрес Get start)
+
+                // *** End programmer edit section *** (Сотрудник.Адрес Get start)
+                string result = this.fАдрес;
+                // *** Start programmer edit section *** (Сотрудник.Адрес Get end)
+
+                // *** End programmer edit section *** (Сотрудник.Адрес Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Сотрудник.Адрес Set start)
+
+                // *** End programmer edit section *** (Сотрудник.Адрес Set start)
+                this.fАдрес = value;
+                // *** Start programmer edit section *** (Сотрудник.Адрес Set end)
+
+                // *** End programmer edit section *** (Сотрудник.Адрес Set end)
+            }
+        }
         
         /// <summary>
         /// код.

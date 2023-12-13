@@ -23,14 +23,14 @@ public class Brigada {
     @Column(name = "primarykey", length = 16, unique = true, nullable = false)
     private UUID primarykey;
 
-    @Column(name = "конец")
-    private String конец;
-
     @Column(name = "начало")
     private String начало;
 
     @Column(name = "назначение")
     private String назначение;
+
+    @Column(name = "конец")
+    private String конец;
 
     @EdmIgnore
     @Converter(converterClass = UUIDConverter.class, name = "Sotrudnik")
@@ -58,14 +58,6 @@ public class Brigada {
         return primarykey;
     }
 
-    public String getконец() {
-      return конец;
-    }
-
-    public void setконец(String конец) {
-      this.конец = конец;
-    }
-
     public String getначало() {
       return начало;
     }
@@ -80,6 +72,14 @@ public class Brigada {
 
     public void setназначение(String назначение) {
       this.назначение = назначение;
+    }
+
+    public String getконец() {
+      return конец;
+    }
+
+    public void setконец(String конец) {
+      this.конец = конец;
     }
 
 

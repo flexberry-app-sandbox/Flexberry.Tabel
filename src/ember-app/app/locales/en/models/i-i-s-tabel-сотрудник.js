@@ -18,6 +18,9 @@ export default {
     }
   },
   validations: {
+    адрес: {
+      __caption__: 'адрес'
+    },
     код: {
       __caption__: 'Код'
     },

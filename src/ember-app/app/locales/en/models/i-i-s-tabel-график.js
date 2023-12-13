@@ -5,6 +5,9 @@ export default {
         __caption__: 'Сотрудник',
         фИО: {
           __caption__: ''
+        },
+        адрес: {
+          __caption__: ''
         }
       },
       начало: {

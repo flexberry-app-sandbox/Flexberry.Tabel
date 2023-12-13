@@ -37,9 +37,9 @@ namespace IIS.Tabel
     public class Должность : ICSSoft.STORMNET.DataObject
     {
         
-        private string fнаименование;
-        
         private string fкод;
+        
+        private string fнаименование;
         
         // *** Start programmer edit section *** (Должность CustomMembers)
 

@@ -7,6 +7,15 @@
   "parentClassName": null,
   "attrs": [
     {
+      "name": "адрес",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
       "name": "код",
       "type": "string",
       "flexberryType": "string",

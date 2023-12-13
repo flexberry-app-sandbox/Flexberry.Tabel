@@ -49,7 +49,8 @@ export let defineProjections = function (modelClass) {
     }, { index: 2, displayMemberPath: 'фИО' }),
     график: hasMany('i-i-s-tabel-график', 'График', {
       сотрудник: belongsTo('i-i-s-tabel-сотрудник', 'Сотрудник', {
-        фИО: attr('', { index: 1, hidden: true })
+        фИО: attr('', { index: 1, hidden: true }),
+        адрес: attr('', { index: 5 })
       }, { index: 0, displayMemberPath: 'фИО' }),
       начало: attr('Начало смены с', { index: 2 }),
       конец: attr('по', { index: 3 }),

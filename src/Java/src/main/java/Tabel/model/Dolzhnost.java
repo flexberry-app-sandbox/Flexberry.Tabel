@@ -21,11 +21,11 @@ public class Dolzhnost {
     @Column(name = "primarykey", length = 16, unique = true, nullable = false)
     private UUID primarykey;
 
-    @Column(name = "наименование")
-    private String наименование;
-
     @Column(name = "код")
     private String код;
+
+    @Column(name = "наименование")
+    private String наименование;
 
 
     public Dolzhnost() {
@@ -40,20 +40,20 @@ public class Dolzhnost {
         return primarykey;
     }
 
-    public String getнаименование() {
-      return наименование;
-    }
-
-    public void setнаименование(String наименование) {
-      this.наименование = наименование;
-    }
-
     public String getкод() {
       return код;
     }
 
     public void setкод(String код) {
       this.код = код;
+    }
+
+    public String getнаименование() {
+      return наименование;
+    }
+
+    public void setнаименование(String наименование) {
+      this.наименование = наименование;
     }
 
 
