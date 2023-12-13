@@ -28,19 +28,19 @@ export default Controller.extend({
             link: 'i-i-s-tabel-сотрудник-l',
             caption: i18n.t('forms.application.sitemap.кадры.i-i-s-tabel-сотрудник-l.caption'),
             title: i18n.t('forms.application.sitemap.кадры.i-i-s-tabel-сотрудник-l.title'),
-            icon: 'edit',
+            icon: 'phone',
             children: null
           }, {
             link: 'i-i-s-tabel-бригада-l',
             caption: i18n.t('forms.application.sitemap.кадры.i-i-s-tabel-бригада-l.caption'),
             title: i18n.t('forms.application.sitemap.кадры.i-i-s-tabel-бригада-l.title'),
-            icon: 'archive',
+            icon: 'briefcase',
             children: null
           }, {
             link: 'i-i-s-tabel-невыходы-l',
             caption: i18n.t('forms.application.sitemap.кадры.i-i-s-tabel-невыходы-l.caption'),
             title: i18n.t('forms.application.sitemap.кадры.i-i-s-tabel-невыходы-l.title'),
-            icon: 'table',
+            icon: 'paperclip',
             children: null
           }, {
             link: 'i-i-s-tabel-должность-l',
@@ -58,7 +58,7 @@ export default Controller.extend({
             link: 'i-i-s-tabel-табель-l',
             caption: i18n.t('forms.application.sitemap.учет-времени.i-i-s-tabel-табель-l.caption'),
             title: i18n.t('forms.application.sitemap.учет-времени.i-i-s-tabel-табель-l.title'),
-            icon: 'edit',
+            icon: 'file',
             children: null
           }]
         }, {

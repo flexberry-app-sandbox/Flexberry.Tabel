@@ -34,7 +34,8 @@ export let ValidationRules = {
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('СотрудникE', 'i-i-s-tabel-сотрудник', {
     фИО: attr('ФИО', { index: 0 }),
-    код: attr('Код', { index: 1 })
+    код: attr('Код', { index: 1 }),
+    адрес: attr('', { index: 2 })
   });
 
   modelClass.defineProjection('СотрудникL', 'i-i-s-tabel-сотрудник', {

@@ -6,6 +6,9 @@ export default {
       },
       код: {
         __caption__: 'Код'
+      },
+      адрес: {
+        __caption__: ''
       }
     },
     СотрудникL: {

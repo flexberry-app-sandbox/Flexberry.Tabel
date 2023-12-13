@@ -30,7 +30,8 @@ namespace IIS.Tabel
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("СотрудникE", new string[] {
             "ФИО as \'ФИО\'",
-            "код as \'Код\'"})]
+            "код as \'Код\'",
+            "Адрес"})]
     [View("СотрудникL", new string[] {
             "ФИО as \'ФИО\'",
             "код as \'Код\'"})]
